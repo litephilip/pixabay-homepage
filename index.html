@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="ajax.js" defer></script>
+    <title>Pixabay</title>
+  </head>
+  <body>
+    <form>
+      <header>
+        <nav>
+          <a class="pixabay-logo" href="pixabay">Pixabay</a>
+          <a href="login">Logga in</a> | <a href="Join">Join</a> |
+          <button>Ladda Upp</button>
+        </nav>
+      </header>
+      
+      <form class="search-field">
+        <label>
+          <input type="search" name="q" placeholder="Search" />
+        </label>
+        <button type="submit">Pixabay</button>
+      </form>
+
+      <fieldset class="category">
+        <legend>Category</legend>
+        <select name="category">
+          <option>animals</option>
+          <option>backgrounds</option>
+          <option>buildings</option>
+          <option>business</option>
+          <option>computer</option>
+          <option>education</option>
+          <option>fashion</option>
+          <option>feelings</option>
+          <option>food</option>
+          <option>health</option>
+          <option>industry</option>
+          <option>music</option>
+          <option>nature</option>
+          <option>people</option>
+          <option>sports</option>
+          <option>universe</option>
+          <option>travel</option>
+          <option>coding</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Minimum Size</legend>
+        <label>
+          Width
+          <input type="number" name="width" min="100" step="50" id="width" />
+        </label>
+        <label>
+          Height
+          <input type="number" name="height" min="100" step="50" id="height" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Colors</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="black" />
+              <span>Black</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="blue" />
+              <span>Blue</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="brown" />
+              <span>Brown</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="gray" />
+              <span>Gray</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="green" />
+              <span>Green</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="pink" />
+              <span>Pink</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="orange" />
+              <span>Orange</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="red" />
+              <span>Red</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="color" value="white" />
+              <span>White</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+      <ul id="result"></ul>
+    </form>
+  </body>
+</html>

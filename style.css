@@ -1,0 +1,33 @@
+html {
+  background-color: white;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Open Sans' sans-serif;
+  font-size: 14px;
+  height: 60px;
+  background-color: rgb(167, 159, 159);
+}
+
+.pixabay-logo {
+  margin-right: 40px;
+  display: flex;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav button {
+  margin: -1px 20px 0px 15px;
+  padding: 6px 27px;
+
+  color: white;
+  background-color: #02be6e !important;
+  border-radius: 50px;
+  border-color: none;
+}
